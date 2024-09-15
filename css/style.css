@@ -1,0 +1,201 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height:100%;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background: #141414;
+    background-size: auto;
+    background-attachment: fixed;
+    text-align: left;
+    color: #d1dad1;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:100%;
+    background-attachment: fixed;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #022702;
+    color: #dde4dd;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #2c4b2c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 2rem 0;
+    color: #2c4b2c;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: transparent;
+    color: #00ff00;
+    text-align: center;
+}
+
+/* za 1.sliku */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #97ac97;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: #6ab36a;
+    font-size: 36px;
+}
+
+h4 {
+    margin-top:200px;
+    margin-bottom: 20px;
+    color: #6ab36a;
+    font-size: 26px;
+}
+
+.greendlss {
+    color: #00e21f; /* zeleni tekst */
+    font-weight: bold;
+}
+
+.redfsr {
+    color: #964035; /* crveni tekst */
+    font-weight: bold;
+}
+
+
+
+.img { /*ovdje počinje CSS za image comparison*/
+    display: block;
+    max-width:100%;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container  {
+display: grid;
+place-content: center;
+position: relative;
+overflow: hidden;
+border-radius: 1rem;
+--position: 50%;
+}
+
+.image-container {
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 16/9;
+}
+
+.slider-slika {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slika-before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%; /*za firefox*/
+    height: 100%; /*za firefox*/
+}
+
+.slider-line {
+    position: absolute;
+    inset: 0;
+    width: 0.4rem;
+    height: 100%;
+    background-color: white;
+    z-index: 10;
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+ 
+.slider-button { /*ovdje završava CSS za image comparison*/
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 100;
+}
+
+/* responzivnost */
+@media (max-width: 768px) {
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comparison img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin-top: 2rem;
+        width: 95%;
+    }
+}

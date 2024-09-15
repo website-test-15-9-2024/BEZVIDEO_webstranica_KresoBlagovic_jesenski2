@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slikovna usporedba DLSS/FSR</title>
+    <style> a:hover { text-shadow: 0 0 5px #ff0000;}
+            p {text-align: center;}</style>
+    <script src="js/javascript.js" defer></script> <!--JavaScript potreban za usporedbu 2 slike-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Upscaling i njegova važnost za moderne igre</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna stranica</a></li>
+                <li><a href="informacije.html">Što je upscaling?</a></li>
+                <li><a href="dlssfsr.html">DLSS i FSR</a></li>
+                <li><a href="slikausporedba.html">Slikovna usporedba</a></li>
+                <li><a href="videousporedba.html">Video usporedba</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>Na ovom primjeru možemo dokazati zašto je upscaling koristan. Na lijevoj slici sa 46FPS (sličica u sekundi) 
+        koristimo običnu 1920x1080 <br> rezoluciju. Na desnoj slici sa 89FPS koristimo DLSS s početnom rezolucijom 960x540 povećano na 1920x1080. Kvaliteta slike 
+        je gotovo ista.</p>
+
+    <main>
+        <div class="container">
+            <div class ="image-container">
+                <img class = "slika-before slider-slika" src="images/540dlss.jpg" alt="DLSS"/> <!--prva slika-->
+                <img class = "slika-after slider-slika" src="images/1080p.jpg" alt="1080p"/> <!--druga slika-->
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider"/> <!--da usporedimo slike-->
+            <div class="slider-line"></div>
+            <div class="slider-button"></div>
+        </div>    
+    </main>        
+        <footer>
+            <p>Rujan 2024.</p>
+        </footer>
+</body>
+</html>

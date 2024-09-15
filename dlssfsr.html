@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLSS i FSR</title>
+    <style> a:hover { text-shadow: 0 0 5px #ff0000;}
+            p {text-align: left; margin-bottom: 15px;}
+            p2 {text-align: center;}
+            h2 {text-align: left;}
+            li {text-align: left;} </style>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<body>
+    <header>
+        <h1>Upscaling i njegova važnost za moderne igre</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna stranica</a></li>
+                <li><a href="informacije.html">Što je upscaling?</a></li>
+                <li><a href="dlssfsr.html">DLSS i FSR</a></li>
+                <li><a href="slikausporedba.html">Slikovna usporedba</a></li>
+                <li><a href="videousporedba.html">Video usporedba</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2><span class="greendlss">DLSS</span></h2>
+        <p>DLSS je upscaling tehnologija koju je proizvela tvrtka Nvidia. DLSS koristi strojno učenje i neuronske mreže 
+            kako bi analizirao slike niže rezolucije i pomoću Tenzor jezgri (fizička komponenta na novijim Nvidia grafičkim karticama)
+            rekonstruirao sliku u višoj rezoluciji. Ne analizira samo trenutnu sliku, nego dobiva informacije i iz prethodno prikazanih slika.
+            DLSS sve ovo koristi kako bi "pogađao" što treba prikazati, i nakon nekoliko godina razvoja sada je to vrlo kvalitetna tehnologija.
+            DLSS je postao vrlo popularan jer mnogi korisnici koristeći samo 66% rezolucije svog ekrana dobivaju gotovo isto kvalitetu
+            slike kao i normalno prikazivanje bez upscalinga, što je puno grafički zahtjevnije.</p>
+            <p>Glavni nedostaci DLSS-a? Radi samo na novijim Nvidia grafičkim karticama - ako koristite AMD ili Intel GPU, nemate pristup ovoj tehnologiji. 
+                Još jedan nedostatak je što DLSS ipak ima svoja ograničenja: ako povećavate sa 1280x720 na 1920x1080 
+            kvaliteta dobivene slike bit će prihvatljiva, ali ako pretvarate sitnih 854x480 u 2560x1440 tada će rezultat izgledati loše.</p>
+
+        <h2><span class="redfsr">FSR</span></h2>
+        <p>FSR je upscaling tehnologija otvorenog koda koju je razvio AMD. 
+            Napravljen po uzoru na DLSS, FSR također pretvara manju sliku u veću sliku sa minimalnim gubitkom vizualne kvalitete, 
+            no za FSR nije potreban nikakav specijaliziran hardware - funkcionira na grafičkim karticama svakog većeg proizvođača (AMD, Intel, Nvidia), te ga koriste ga i mnoge konzole (Playstation, Xbox).</p> 
+            <p>Njegova učinkovitost nije uvijek na razini DLSS tehnologije, dobivena slika je malo manje uvjerljiva i gubi na kvalitetu kada se puno toga brzo mijenja 
+            na ekranu. No ovo je razumljivo jer je FSR mlađa i potpuno softverska vrsta upscalinga koja je 
+            dostupna svima. Naravno, FSR kao i DLSS ima svoje ograničenja te ne može od vrlo malene rezolucije stvoriti kvalitetnu sliku daleko veće rezolucije.</p>
+
+        <h2>Što je bolje?</h2>
+        <p>Ako imate Nvidia grafičku karticu? <span class="greendlss">DLSS</span> je očito bolji izbor. No mnogi smatraju Nvidia grafičke kartice cjenovno manje isplative 
+            od AMD/Intel kartica, kod kojih <span class="redfsr">FSR</span> obavlja skoro pa jednako dobar posao.</p>
+                
+    </section>
+
+    <footer>
+        <p2>Rujan 2024.</p2>
+    </footer>
+
+</body>
+</html>
